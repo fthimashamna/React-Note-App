@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100%;
+  max-width: 1100px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 40px 25px;
+  color: #222;
+}
+
+/* Heading */
+
+.app h1 {
+  text-align: center;
+  font-size: 42px;
+  margin: 0 0 30px;
+  color: #222 !important;
+}
+
+/* Success message */
+
+.message {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background: #dff7e3;
+  color: #217a35 !important;
+}
+
+/* Error message */
+
+.error {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background: #ffe0e0;
+  color: #c62828 !important;
+}
+
+/* Search box */
+
+.search-box {
+  width: 100%;
+  padding: 14px 18px;
+  margin-bottom: 25px;
+
+  border: 1px solid #ddd;
+  border-radius: 12px;
+
+  background: #ffffff !important;
+  color: #222 !important;
+
+  outline: none;
+  font-size: 16px;
+
+  transition: 0.3s;
+}
+
+.search-box::placeholder {
+  color: #777 !important;
+}
+
+.search-box:focus {
+  border-color: #777;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Form */
+
+.note-form {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 35px;
+}
+
+/* Title input */
+
+.note-input {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 12px;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  background: #ffffff !important;
+  color: #222 !important;
+
+  outline: none;
+  font-size: 15px;
+}
+
+.note-input::placeholder {
+  color: #777 !important;
+}
+
+.note-input:focus {
+  border-color: #777;
+}
+
+/* Content textarea */
+
+.note-textarea {
+  width: 100%;
+  min-height: 120px;
+
+  padding: 13px;
+  margin-bottom: 12px;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  background: #ffffff !important;
+  color: #222 !important;
+
+  outline: none;
+  font-size: 15px;
+
+  resize: vertical;
+}
+
+.note-textarea::placeholder {
+  color: #777 !important;
+}
+
+.note-textarea:focus {
+  border-color: #777;
+}
+
+/* Add / Update button */
+
+.add-button {
+  display: block;
+  margin: auto;
+
+  padding: 11px 20px;
+
+  border: none;
+  border-radius: 9px;
+
+  background: #222 !important;
+  color: #ffffff !important;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-button:hover {
+  background: #444 !important;
+  transform: translateY(-2px);
+}
+
+/* Notes container */
+
+.notes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Note card */
+
+.note-card {
+  background: #fff8a6 !important;
+
+  padding: 22px;
+  border-radius: 16px;
+
+  min-height: 180px;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+  transition: 0.25s;
+}
+
+.note-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Note title */
+
+.note-card h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: #222 !important;
+  font-size: 22px;
+}
+
+/* Note content */
+
+.note-card h3 {
+  margin: 0;
+
+  color: #333 !important;
+
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+/* Buttons */
+
+.note-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.note-buttons button {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 7px;
+
+  color: #222 !important;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.edit-button {
+  background: #e0e0e0 !important;
+}
+
+.delete-button {
+  background: #ffcccc !important;
+}
+
+.archive-button {
+  background: #d8e8ff !important;
+}
+
+.note-buttons button:hover {
+  transform: scale(1.05);
+}
+
+/* Spinner */
+
+.spinner {
+  width: 30px;
+  height: 30px;
+
+  border: 4px solid #ddd;
+  border-top: 4px solid #222;
+
+  border-radius: 50%;
+
+  animation: spin 1s linear infinite;
+
+  margin: 15px auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .app {
+    padding: 25px 15px;
+  }
+
+  .app h1 {
+    font-size: 32px;
+  }
+
+  .notes-container {
+    grid-template-columns: 1fr;
+  }
+}

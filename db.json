@@ -1,0 +1,56 @@
+{
+  "notes": [
+    {
+      "title": "abcd",
+      "content": " A B C D E F G H I J K L M N O P Q R S T U V W X Y Z ",
+      "color": "yellow",
+      "tags": [],
+      "archived": true,
+      "stock": 0,
+      "createdAt": "2026-09-24T12:54:17.536Z",
+      "updatedAt": "2026-09-24T12:54:17.536Z",
+      "id": "zEvbm3XXOJI"
+    },
+    {
+      "title": "123",
+      "content": "1 2 3 4 5 6 7 8 9 10\n11 12 13 14 15 16 17 18 19 20 \n21 22 23 24 25 26 27 28 29 30 \n31 32 33 34 35 36 37 38 39 40\n41 42 43 44 45 46 47 48 49 50\n51 52 53 54 55 56 57 58 59 60\n61 62 63 64 65 66 67 68 69 70\n71 72 73 74 75 76 77 78 79 80\n81 82 83 84 85 86 87 88 89 90\n91 92 93 94 95 96 97 98 99 100",
+      "updatedAt": "2026-09-24T12:57:26.474Z",
+      "id": "D0l_PQl4EME",
+      "archived": true
+    },
+    {
+      "title": "A",
+      "content": "apple , and , animation , ",
+      "color": "yellow",
+      "tags": [],
+      "archived": true,
+      "stock": 0,
+      "createdAt": "2026-09-24T12:58:32.893Z",
+      "updatedAt": "2026-09-24T12:58:32.893Z",
+      "id": "NcgD4DCanc4"
+    },
+    {
+      "title": "B",
+      "content": "bag , ball, brown , big , bank , bill",
+      "color": "yellow",
+      "tags": [],
+      "archived": true,
+      "stock": 0,
+      "createdAt": "2026-09-24T12:58:56.597Z",
+      "updatedAt": "2026-09-24T12:58:56.597Z",
+      "id": "rfLquNcA6xA"
+    },
+    {
+      "title": "C",
+      "content": "cat , cow , crown , color , cup ",
+      "color": "yellow",
+      "tags": [],
+      "archived": true,
+      "stock": 0,
+      "createdAt": "2026-09-24T12:59:14.299Z",
+      "updatedAt": "2026-09-24T12:59:14.299Z",
+      "id": "4oAlK1DqBbw"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
